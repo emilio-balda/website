@@ -15,7 +15,7 @@
         <p class="text-2xl text-left"><a href="mailto:me@emilio-balda.com">me@emilio-balda.com</a></p>
       </td>
       <td width="700px">
-        <p class="text-2xl text-justify py-8">
+        <p class="text-2xl text-justify py-20">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non magna id risus rutrum pulvinar quis in libero.
         </p>
         <button class="button-64" role="button"><span class="text">Get Started</span></button>

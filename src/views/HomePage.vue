@@ -24,11 +24,11 @@
   </table>
 </template>
 
-<style>
+<style scoped>
 /* CSS */
 .button-64 {
   align-items: center;
-  background-image: linear-gradient(144deg, #f14cf7, #5b42f3 50%, #00eb91);
+  background-image: linear-gradient(144deg, darkorchid, royalblue, mediumspringgreen);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -53,6 +53,7 @@
 .button-64:active,
 .button-64:hover {
   outline: 0;
+  box-shadow: 0px 0px 20px 0px mediumspringgreen;
 }
 
 .button-64 span {
@@ -64,9 +65,9 @@
   transition: 300ms;
 }
 
-.button-64:hover span {
+/* .button-64:hover span {
   background: none;
-}
+} */
 
 @media (min-width: 768px) {
   .button-64 {

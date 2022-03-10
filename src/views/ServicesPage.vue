@@ -1,4 +1,11 @@
+<script setup lang="ts">
+import { useStore } from 'vuex'
+const store = useStore()
+</script>
+
+
 <template>
+  <h1 v-show="store.state.isMobile" class="text-8xl italic py-8 px-10">Services</h1>
   <div class="row1-container">
     <div class="box box-down cyan">
       <h2>Supervisor</h2>

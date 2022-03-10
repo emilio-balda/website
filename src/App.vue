@@ -1,10 +1,27 @@
 <script setup lang="ts">
 import NavigationBar from '@/components/NavigationBar.vue'
+import MobileView from '@/views/MobileView.vue'
+
+import { ref, onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
+
+const windowWidth = screen.width
+
+onMounted(() => {
+  store.state.isMobile = windowWidth < 768
+})
 </script>
 
 <template>
-  <navigation-bar />
-  <router-view />
+  <template v-if="!store.state.isMobile">
+    <navigation-bar />
+    <router-view />
+  </template>
+  <template v-else>
+    <mobile-view />
+  </template>
 </template>
 
 <style>

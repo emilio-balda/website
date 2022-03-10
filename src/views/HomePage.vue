@@ -1,4 +1,5 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
   <h1 class="text-8xl italic py-8 px-10">Some awesome quote</h1>

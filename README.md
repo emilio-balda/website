@@ -6,8 +6,7 @@
 ## Contact
 
 **Emilio Balda**
-<p>
-email: <a  href="mailto:me@emilio-balda.com">me@emilio-balda.com</a> <br/>
-linkedin: <a  href="https://www.linkedin.com/in/emiliobalda/">emiliobalda</a>
-</p>
-
+<p>Fullstack Developer</p>
+<p>PhD in Machine Learning</p>
+<p>email: <a href="mailto:me@emilio-balda.com">me@emilio-balda.com</a></p>
+<p>linkedin: <a  href="https://www.linkedin.com/in/emiliobalda/">emiliobalda</a></p>

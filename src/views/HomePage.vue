@@ -1,20 +1,19 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1 class="text-8xl italic py-8">Some awesome quote</h1>
-  <table>
+  <h1 class="text-8xl italic py-8 px-10">Some awesome quote</h1>
+  <table class="table-responsive">
     <tr>
-      <td width="100px"></td>
-      <td width="210px">
-        <img src="../assets/me.png" alt="Avatar" class="w-44 rounded-full" />
+      <td class="px-10">
+        <img src="../assets/me.png" alt="Avatar" class="w-60 rounded-full" />
       </td>
-      <td width="500px">
+      <td class="pr-32">
         <h4 class="text-3xl text-left font-bold">Emilio Balda</h4>
         <p class="text-2xl text-left">Fullstack Developer</p>
         <p class="text-2xl text-left">PhD in Machine Learning</p>
         <p class="text-2xl text-left"><a href="mailto:me@emilio-balda.com">me@emilio-balda.com</a></p>
       </td>
-      <td width="700px">
+      <td class="pr-32">
         <p class="text-2xl text-justify py-20">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non magna id risus rutrum pulvinar quis in libero.
         </p>
@@ -73,6 +72,30 @@
   .button-64 {
     font-size: 24px;
     min-width: 196px;
+  }
+}
+
+/* adjust the 768px below to your desired width */
+@media only screen and (max-width: 768px) {
+  h1 {
+    display: block;
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table.table-responsive * {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table.table-responsive tr {
+    padding: 20px;
+  }
+  table.table-responsive tr td {
+    padding: 20px;
   }
 }
 </style>

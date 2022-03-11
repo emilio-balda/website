@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { useStore } from 'vuex'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 
-const store = useStore()
+const route = useRoute()
 
+const currentPage = computed(() => route.name)
 const props = defineProps({
   pageName: String,
   to: String,
@@ -10,12 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <router-link
-    :to="to"
-    class="router-link"
-    :class="{ 'router-link-selected': store.state.currentPage === pageName }"
-    @click.prevent="store.state.currentPage = pageName"
-  >
+  <router-link :to="to" class="router-link" :class="{ 'router-link-selected': currentPage === pageName }">
     {{ pageName }}
   </router-link>
 </template>

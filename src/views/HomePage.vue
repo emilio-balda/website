@@ -2,20 +2,20 @@
 </script>
 
 <template>
-  <h1 class="text-8xl italic py-8 px-10">Some awesome quote</h1>
+  <h1 class="text-8xl italic py-10 px-10">Some awesome quote</h1>
   <table class="table-responsive">
     <tr>
-      <td class="px-10">
-        <img src="../assets/me.png" alt="Avatar" class="w-60 rounded-full" />
+      <td class="px-4">
+        <img src="../assets/me.png" alt="Avatar" class="w-96 rounded-full" />
       </td>
-      <td class="pr-32">
-        <h4 class="text-3xl text-left font-bold">Emilio Balda</h4>
-        <p class="text-2xl text-left">Fullstack Developer</p>
-        <p class="text-2xl text-left">PhD in Machine Learning</p>
-        <p class="text-2xl text-left"><a href="mailto:me@emilio-balda.com">me@emilio-balda.com</a></p>
+      <td class="px-4">
+        <h4 class="text-3xl text-left font-bold whitespace-nowrap">Emilio Balda</h4>
+        <p class="text-3xl text-left whitespace-nowrap">Fullstack Developer</p>
+        <p class="text-3xl text-left whitespace-nowrap">PhD in Machine Learning</p>
+        <p class="text-3xl text-left whitespace-nowrap"><a href="mailto:me@emilio-balda.com">me@emilio-balda.com</a></p>
       </td>
-      <td class="pr-32">
-        <p class="text-2xl text-justify py-20">
+      <td class="px-16">
+        <p class="text-2xl text-justify py-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non magna id risus rutrum pulvinar quis in libero.
         </p>
         <button class="button-64" role="button"><span class="text">Get Started</span></button>
@@ -80,7 +80,7 @@
 @media only screen and (max-width: 768px) {
   h1 {
     display: block;
-    padding: 20px;
+    padding: 1px;
     font-size: 35px;
     text-align: center;
     margin-left: auto;
@@ -93,10 +93,15 @@
     margin-right: auto;
   }
   table.table-responsive tr {
-    padding: 20px;
+    padding: 1px;
   }
   table.table-responsive tr td {
-    padding: 20px;
+    padding: 1px;
   }
+}
+
+table.table-responsive * {
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

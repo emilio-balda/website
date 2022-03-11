@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AppCard from '@/components/AppCard.vue'
 import { useStore } from 'vuex'
 const store = useStore()
 </script>

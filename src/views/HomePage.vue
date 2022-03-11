@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import TableResponsive from '@/components/TableResponsive.vue'
 </script>
 
 <template>
   <h1 class="text-8xl italic py-10 px-10">Some awesome quote</h1>
-  <table class="table-responsive">
+  <table-responsive>
     <tr>
       <td class="px-4">
         <img src="../assets/me.png" alt="Avatar" class="w-96 rounded-full" />
@@ -21,7 +22,7 @@
         <button class="button-64" role="button"><span class="text">Get Started</span></button>
       </td>
     </tr>
-  </table>
+  </table-responsive>
 </template>
 
 <style scoped>
@@ -74,34 +75,5 @@
     font-size: 24px;
     min-width: 196px;
   }
-}
-
-/* adjust the 768px below to your desired width */
-@media only screen and (max-width: 768px) {
-  h1 {
-    display: block;
-    padding: 1px;
-    font-size: 35px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  table.table-responsive * {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  table.table-responsive tr {
-    padding: 1px;
-  }
-  table.table-responsive tr td {
-    padding: 1px;
-  }
-}
-
-table.table-responsive * {
-  margin-left: auto;
-  margin-right: auto;
 }
 </style>
